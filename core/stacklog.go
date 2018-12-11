@@ -30,7 +30,7 @@ func Run() {
 		}
 	}
 
-	err = client.Logger(os.Args[2]).LogSync(ctx, logging.Entry{
+	err = client.Logger("stacklog").LogSync(ctx, logging.Entry{
 		Payload: m,
 	})
 
